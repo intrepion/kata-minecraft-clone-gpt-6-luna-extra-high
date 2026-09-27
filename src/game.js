@@ -282,8 +282,8 @@ function updatePlayer(delta) {
   const strafe = (pressedKeys.has("KeyD") ? 1 : 0) - (pressedKeys.has("KeyA") ? 1 : 0);
   const length = Math.hypot(forward, strafe) || 1;
   const speed = pressedKeys.has("ShiftLeft") || pressedKeys.has("ShiftRight") ? 7.1 : 4.8;
-  const moveX = ((Math.sin(player.yaw) * forward + Math.cos(player.yaw) * strafe) / length) * speed * delta;
-  const moveZ = ((-Math.cos(player.yaw) * forward + Math.sin(player.yaw) * strafe) / length) * speed * delta;
+  const moveX = ((-Math.sin(player.yaw) * forward + Math.cos(player.yaw) * strafe) / length) * speed * delta;
+  const moveZ = ((-Math.cos(player.yaw) * forward - Math.sin(player.yaw) * strafe) / length) * speed * delta;
 
   const nextX = THREE.MathUtils.clamp(player.x + moveX, -23.25, 22.25);
   if (!collidesAt(nextX, player.y, player.z)) player.x = nextX;
