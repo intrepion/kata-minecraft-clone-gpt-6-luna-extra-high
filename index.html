@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#c8e5ee" />
+    <meta name="description" content="Blockbound is a tiny, browser-based voxel sandbox. Explore, mine, and build." />
+    <title>Blockbound — A Voxel Sandbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./src/game.js"></script>
+  </head>
+  <body>
+    <main class="game" aria-label="Blockbound voxel sandbox">
+      <canvas id="world" aria-label="3D block world"></canvas>
+
+      <div class="vignette" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Blockbound home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>BLOCKBOUND</span>
+        </a>
+        <div class="world-card">
+          <span class="world-dot"></span>
+          <span class="world-name">THE OVERGROWN</span>
+          <span class="world-divider"></span>
+          <span id="clock-label">DAY 01 · 09:00</span>
+        </div>
+        <div class="coordinates" aria-label="Player position">
+          <span class="coordinates-label">POSITION</span>
+          <span id="position-label">X 0 &nbsp; Y 0 &nbsp; Z 0</span>
+        </div>
+      </header>
+
+      <div class="reticle" aria-hidden="true"><span></span><i></i></div>
+      <div class="target-label" id="target-label" aria-live="polite"></div>
+
+      <aside class="left-note">
+        <span class="note-rule"></span>
+        <span id="region-label">A QUIET CORNER OF THE WORLD</span>
+      </aside>
+
+      <footer class="bottom-ui">
+        <div class="controls-note">
+          <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> <em>move</em></span>
+          <span><kbd>SPACE</kbd> <em>jump</em></span>
+          <span><kbd>ESC</kbd> <em>pause</em></span>
+        </div>
+
+        <nav class="hotbar-wrap" aria-label="Building blocks">
+          <div class="hotbar-caption"><span>YOUR BLOCKS</span><span>INFINITE SUPPLY</span></div>
+          <div class="hotbar" id="hotbar"></div>
+        </nav>
+
+        <div class="action-note">
+          <span class="mouse-icon" aria-hidden="true"><i></i></span>
+          <span><b>LEFT</b> MINE <span class="action-separator">/</span> <b>RIGHT</b> PLACE</span>
+        </div>
+      </footer>
+
+      <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-card">
+          <div class="welcome-eyebrow"><span class="welcome-spark"></span> A SMALL WORLD, ALL YOURS</div>
+          <h1 id="welcome-title">Make room<br />for <span>wonder.</span></h1>
+          <p class="welcome-copy" id="welcome-copy">Wander a little. Take what you need. Leave the place more yours than you found it.</p>
+          <button class="enter-button" id="enter-button" type="button">
+            <span>Enter the world</span><span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <div class="welcome-foot"><span>NO RULES. JUST BLOCKS.</span><span>01 / 01</span></div>
+        </div>
+        <div class="welcome-caption"><span class="caption-line"></span><span>GENERATED FOR YOU, EVERY TIME</span></div>
+      </section>
+
+      <div class="corner-mark" aria-hidden="true">BB<span>®</span></div>
+    </main>
+  </body>
+</html>
