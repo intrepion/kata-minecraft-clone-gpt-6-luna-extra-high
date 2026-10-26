@@ -26,3 +26,7 @@ Open <http://localhost:8000> in a desktop browser and choose **Enter the world**
 | Esc | Pause or resume |
 
 The block supply is unlimited, and the world is local to the browser session.
+
+## Play online
+
+[Play the hosted game](https://intrepion.github.io/kata-minecraft-clone-gpt-6-luna-extra-high/)
