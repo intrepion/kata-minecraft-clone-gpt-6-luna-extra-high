@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "workflowCommit": "6a63e9c77e1f8ce9c36fbe3eb9b34dab85365c2b",
+  "sourceCommit": "29620231f7fef3c0368a0eefe706d0b1c071d567",
+  "runId": "41448832938",
+  "url": "http://127.0.0.1:4289/",
+  "inputs": {
+    "index.html": "6cb1344f845cad9af73ceb223c1197901cfa8b3b6d638366c1b219bca37122d4",
+    "styles.css": "52e71ca8d38c8ab5b10f5816a3b66d26443fc1801d939ae01a563a6bbdc7264f",
+    "src/game.js": "30acbb3e98336f8867b731f4e687b46dfeba1f791646104a2e8b7966e3f47560"
+  },
+  "externalRuntime": {
+    "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+  },
+  "externalFontProvenance": "Google Fonts loaded separately or browser fallback; not hashed",
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1280,
+    "height": 1000
+  },
+  "screenshots": [
+    "blockbound-01.png",
+    "blockbound-02.png"
+  ]
+}
