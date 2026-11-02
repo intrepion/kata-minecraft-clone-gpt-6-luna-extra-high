@@ -30,3 +30,7 @@ The block supply is unlimited, and the world is local to the browser session.
 ## Play online
 
 [Play the hosted game](https://intrepion.github.io/kata-minecraft-clone-gpt-6-luna-extra-high/)
+
+## Arcade metadata
+
+See [docs/arcade-metadata.md](docs/arcade-metadata.md) for the game-owned manifest and screenshot provenance.
