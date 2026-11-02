@@ -24,7 +24,7 @@ jobs:
         env:
           CAPTURE_OUTPUT: capture-output
         run: |
-          export GAME_SOURCE_COMMIT="$(git rev-parse HEAD^)"
+          export GAME_SOURCE_COMMIT="29620231f7fef3c0368a0eefe706d0b1c071d567"
           python3 -m http.server 4289 --bind 127.0.0.1 > /tmp/blockbound-http.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
